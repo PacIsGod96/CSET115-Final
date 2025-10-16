@@ -15,9 +15,11 @@ body{
     height: 800px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
-
+.players{
+    color: white;
+}
 .btns button{
     width: 100px;
     height: 100px;

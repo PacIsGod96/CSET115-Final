@@ -19,8 +19,8 @@ body{
 }
 
 .btns button{
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     font-size: 100px;
     font-weight: bold;
     background-color: white;
@@ -32,3 +32,8 @@ body{
     color: white;
     text-align: center;
 }
+
+.btns table{
+    border: 1px solid white;
+}
+

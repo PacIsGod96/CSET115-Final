@@ -39,6 +39,7 @@ body{
 .players-Container .points{
     margin-top: 20px;
     font-size: 60px;
+    
 }
 .player-Box{
     width: 200px;
@@ -49,6 +50,7 @@ body{
     width: 150px;
     height: 200px;
     background-color: white;
+
 }
 .btns button{
     width: 125px;   

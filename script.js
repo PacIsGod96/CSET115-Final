@@ -13,12 +13,14 @@ function turn(event){
         btnPressed.textContent = `X`
         btnPressed.disabled = true
         btnPressed.style.color = `black`
+        document.getElementsByClassName("turn")[0].textContent = `Players Turn: O`
         player1 =  false 
         player2 = true
     }else{
         btnPressed.textContent = `O`
         btnPressed.disabled = true
         btnPressed.style.color = `black`
+        document.getElementsByClassName("turn")[0].textContent = `Players Turn: X`
         player1 = true
         player2 = false
     }

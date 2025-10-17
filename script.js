@@ -70,9 +70,12 @@ function winCheck(){
     }
 
 
-    ties++;
-    document.getElementsByClassName("points")[0].textContent = ties;
-
+    if(a1 !== "" && a2 !== "" && a3 !== "" &&
+       b1 !== "" && b2 !== "" && b3 !== "" &&
+       c1 !== "" && c2 !== "" && c3 !== ""){
+        ties++;
+        document.getElementsByClassName("points")[0].textContent = ties;
+    }
     return false; // No win condition found
 
 }

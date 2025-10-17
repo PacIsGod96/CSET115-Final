@@ -5,7 +5,8 @@ let player2Points = 0;
 let ties = 0;
 let playBtn = document.querySelector(`.play-Again-Btn`)
 playBtn.style.visibility = `hidden`
-
+let resetBtn = document.querySelector(`.resetGame`)
+resetBtn.style.visibility = `hidden`
 function turn(event){
     let btnPressed = event.target
     if(player1 === true){
@@ -62,6 +63,7 @@ function winCheck(){
             player1Points++;
             document.getElementsByClassName("p1-points")[0].textContent = player1Points;
             playBtn.style.visibility = `visible`
+            resetBtn.style.visibility = `visible`
             winLock()
             return true; // A win condition is met
         } else if (a === "O" && b === "O" && c === "O") {
@@ -69,6 +71,7 @@ function winCheck(){
             player2Points++;
             document.getElementsByClassName("p2-points")[0].textContent = player2Points;
             playBtn.style.visibility = `visible`
+            resetBtn.style.visibility = `visible`
             winLock()
             return true; // A win condition is met
         }
@@ -82,6 +85,7 @@ function winCheck(){
         ties++;
         document.getElementsByClassName("points")[0].textContent = ties;
         playBtn.style.visibility = `visible`
+        resetBtn.style.visibility = `visible`
     }
     return false; // No win condition found
 
@@ -95,6 +99,7 @@ function playAgain(){
         resetBtns[i].textContent = ``
     }
     playBtn.style.visibility = `hidden`
+    resetBtn.style.visibility = `hidden`
 }
 
 function winLock(){
@@ -103,4 +108,21 @@ function winLock(){
     for(let i = 0; i < resetBtns.length; i++){
         resetBtns[i].disabled = true
     }
+}
+
+function resetGame(){
+    let btnContainer = document.querySelector(`.btns`)
+    let resetBtns = btnContainer.querySelectorAll(`button`)
+    player1Points = 0
+    player2Points = 0
+    ties = 0
+    document.getElementsByClassName(`p1-points`)[0].textContent = player1Points
+    document.getElementsByClassName(`p2-points`)[0].textContent = player2Points
+    document.getElementsByClassName(`points`)[0].textContent = ties
+    for(let i = 0; i < resetBtns.length; i++){
+        resetBtns[i].disabled = false
+        resetBtns[i].textContent = ``
+    }
+    playBtn.style.visibility = `hidden`
+    resetBtn.style.visibility = `hidden`
 }

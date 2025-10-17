@@ -76,6 +76,18 @@ body{
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s, transform 0.2s;
+.resetGame{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+.btns button{
+    width: 125px;   
+    height: 125px;
+    font-size: 100px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
 }
 .btns{
     color: white;

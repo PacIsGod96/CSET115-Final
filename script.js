@@ -1,5 +1,9 @@
 let player1 = true
 let player2 = false
+let playBtn = document.querySelector(`.play-Again-Btn`)
+playBtn.disabled = true
+playBtn.style.backgroundColor = `white`
+playBtn.style.color = `black`
 function turn(event){
     let btnPressed = event.target
     if(player1 === true){
@@ -34,5 +38,10 @@ function winCheck(){
 }
 
 function playAgain(){
-    
+    let btnContainer = document.querySelector(`.btns`)
+    let resetBtns = btnContainer.querySelectorAll(`button`)
+    for(let i = 0; i < resetBtns.length; i++){
+        resetBtns[i].disabled = false
+        resetBtns[i].textContent = ``
+    }
 }

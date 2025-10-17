@@ -23,6 +23,7 @@ body{
 .players{
     color: white;
     text-align: center;
+    font-weight: bold;
 }
 .players-Container{
     display: flex;
@@ -34,43 +35,62 @@ body{
     text-decoration: underline;
     margin-top: 10px;
     font-size: large;
+    font-weight: bold;
     color: rgb(165, 152, 152);
 }
 .players-Container .points{
     margin-top: 20px;
     font-size: 60px;
+    font-weight: bold;
 }
 .player-Box{
     width: 200px;
-    height: 200px;
+    height: 175px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 2px solid #333;
+    border-radius: 15px;
     background-color: white;
 }
 .ties-Box{
     width: 150px;
-    height: 200px;
+   height: 175px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 2px solid #333;
+    border-radius: 15px;
     background-color: white;
-
 }
 .play-Again-Btn{
     width: 200px;
     height: 50px;
     font-size: 20px;
 }
-.btns button{
-    width: 125px;   
-    height: 125px;
-    font-size: 100px;
-    font-weight: bold;
-    background-color: white;
-    border: 2px solid black;
+.btns button {
+  width: 125px;
+  height: 125px;
+  font-size: 80px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, transform 0.2s;
 }
-
 .btns{
     color: white;
     text-align: center;
 }
-
-.btns table{
-    border: 1px solid white;
+.btns table {
+  border-collapse: collapse;
+  margin: 0 auto;
 }
+.btns button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+.btns td {
+  padding: 5px;
+}
+
 

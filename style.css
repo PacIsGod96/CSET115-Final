@@ -14,11 +14,36 @@ body{
     width: 600px;
     height: 800px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .players{
     color: white;
+    text-align: center;
+}
+.players-Container{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    color: black;
+}
+.players-Container p{
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: large;
+    color: rgb(165, 152, 152);
+}
+.players-Container .points{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.player-Box{
+    width: 200px;
+    height: 200px;
+    background-color: white;
 }
 .btns button{
     width: 125px;
@@ -28,8 +53,6 @@ body{
     background-color: white;
     border: 2px solid black;
 }
-
-
 .btns{
     color: white;
     text-align: center;

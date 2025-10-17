@@ -65,6 +65,14 @@ body{
     width: 200px;
     height: 50px;
     font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.play-Again-Btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
 .btns button {
   width: 125px;
@@ -76,11 +84,23 @@ body{
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s, transform 0.2s;
+<<<<<<< HEAD
 
+=======
+}
+>>>>>>> a703e803c1dd0b09c1b7921e7da3566b3ee770a3
 .resetGame{
     width: 200px;
     height: 50px;
     font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.resetGame:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
 .btns button{
     width: 125px;   

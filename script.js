@@ -8,10 +8,14 @@ function turn(event){
     let btnPressed = event.target
     if(player1 === true){
         btnPressed.textContent = `X`
+        btnPressed.disabled = true
+        btnPressed.style.color = `black`
         player1 =  false 
         player2 = true
     }else{
         btnPressed.textContent = `O`
+        btnPressed.disabled = true
+        btnPressed.style.color = `black`
         player1 = true
         player2 = false
     }
@@ -23,7 +27,6 @@ function turn(event){
 
 
 function winCheck(){
-
     let a1 = document.getElementsByClassName("a1")[0].textContent
     let a2 = document.getElementsByClassName("a2")[0].textContent
     let a3 = document.getElementsByClassName("a3")[0].textContent
@@ -68,4 +71,10 @@ function winCheck(){
     document.getElementsByClassName("points")[0].textContent = ties;
 
     return false; // No win condition found
+
+}
+
+function playAgain(){
+    
+
 }

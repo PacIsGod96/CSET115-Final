@@ -46,19 +46,21 @@ body{
     height: 200px;
     background-color: white;
 }
-.play-Btn{
+.ties-Box{
     width: 150px;
-    height: 50px;
-    font-size: 30px;
+    height: 200px;
+    background-color: white;
+
 }
 .btns button{
-    width: 125px;
+    width: 125px;   
     height: 125px;
     font-size: 100px;
     font-weight: bold;
     background-color: white;
     border: 2px solid black;
 }
+
 .btns{
     color: white;
     text-align: center;

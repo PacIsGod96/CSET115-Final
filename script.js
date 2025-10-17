@@ -4,10 +4,14 @@ function turn(event){
     let btnPressed = event.target
     if(player1 === true){
         btnPressed.textContent = `X`
+        btnPressed.disabled = true
+        btnPressed.style.color = `black`
         player1 =  false 
         player2 = true
     }else{
         btnPressed.textContent = `O`
+        btnPressed.disabled = true
+        btnPressed.style.color = `black`
         player1 = true
         player2 = false
     }
@@ -27,4 +31,8 @@ const winCombos = [
 
 function winCheck(){
 
+}
+
+function playAgain(){
+    
 }

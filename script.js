@@ -1,9 +1,7 @@
 let player1 = true
 let player2 = false
 let playBtn = document.querySelector(`.play-Again-Btn`)
-playBtn.disabled = true
-playBtn.style.backgroundColor = `white`
-playBtn.style.color = `black`
+playBtn.style.visibility = `hidden`
 function turn(event){
     let btnPressed = event.target
     if(player1 === true){

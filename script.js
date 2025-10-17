@@ -1,11 +1,10 @@
 let player1 = true
 let player2 = false
-
-let playBtn = document.querySelector(`.play-Again-Btn`)
-playBtn.style.visibility = `hidden`
 let player1Points = 0;
 let player2Points = 0;
 let ties = 0;
+let playBtn = document.querySelector(`.play-Again-Btn`)
+playBtn.style.visibility = `hidden`
 
 function turn(event){
     let btnPressed = event.target
@@ -60,13 +59,18 @@ function winCheck(){
             console.log("Player 1 Wins!");
             player1Points++;
             document.getElementsByClassName("p1-points")[0].textContent = player1Points;
+            playBtn.style.visibility = `visible`
+            winLock()
             return true; // A win condition is met
         } else if (a === "O" && b === "O" && c === "O") {
             console.log("Player 2 Wins!");
             player2Points++;
             document.getElementsByClassName("p2-points")[0].textContent = player2Points;
+            playBtn.style.visibility = `visible`
+            winLock()
             return true; // A win condition is met
         }
+
     }
 
 
@@ -75,6 +79,7 @@ function winCheck(){
        c1 !== "" && c2 !== "" && c3 !== ""){
         ties++;
         document.getElementsByClassName("points")[0].textContent = ties;
+        playBtn.style.visibility = `visible`
     }
     return false; // No win condition found
 
@@ -87,5 +92,13 @@ function playAgain(){
         resetBtns[i].disabled = false
         resetBtns[i].textContent = ``
     }
+    playBtn.style.visibility = `hidden`
+}
 
+function winLock(){
+    let btnContainer = document.querySelector(`.btns`)
+    let resetBtns = btnContainer.querySelectorAll(`button`)
+    for(let i = 0; i < resetBtns.length; i++){
+        resetBtns[i].disabled = true
+    }
 }
